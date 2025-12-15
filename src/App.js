@@ -394,9 +394,9 @@ function App() {
                     <p className="card-text">
                       React-based project with real-world functionality.
                     </p>
-                    <a href="#" className="btn btn-sm btn-orange">
+                    {/* <a href="#" className="btn btn-sm btn-orange">
                       View Project
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -409,10 +409,10 @@ function App() {
       <section id="social" className="section-dark text-center">
         <div className="container">
           <h2 className="section-title">Connect With Me</h2>
-          <a href="#" className="btn btn-outline-light me-3">
+          <a href="https://github.com/dashboard" className="btn btn-outline-light me-3">
             GitHub
           </a>
-          <a href="#" className="btn btn-outline-light">
+          <a href="https://www.linkedin.com/in/m anoj-yadav-311b742a7/" className="btn btn-outline-light">
             LinkedIn
           </a>
         </div>
