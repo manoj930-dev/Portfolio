@@ -57,6 +57,7 @@ function App() {
   </div>
 </header>
 
+
      <section id="home" className="hero-section">
   <div className="container">
     <div className="row align-items-center min-vh-100">

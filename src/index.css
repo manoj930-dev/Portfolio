@@ -286,6 +286,7 @@ section {
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
+
 .main-header {
   position: fixed;
   width: 100%;
