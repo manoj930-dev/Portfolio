@@ -385,6 +385,12 @@ function App() {
             {[
              
               {
+                title: "Free Chat App",
+                description:
+                  "This app building for free chat with friend and family without mobile number with use of Electron.js",
+                link: "https://chat-app-plyu.onrender.com/",
+              },
+              {
                 title: "Kisaan Watch",
                 description:
                   "Agriculture monitoring system for farmers, tracking crop and field data with React frontend.",
