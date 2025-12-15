@@ -2,107 +2,108 @@ import "./App.css";
 
 function App() {
   const downloadCV = () => {
-  window.open(
-    "https://drive.google.com/file/d/1Lt73YgIyFYbTQ3jTWBhXu_UM-oWr34C3/view?usp=drive_link",
-    "_blank"
-  );
-};
+    window.open(
+      "https://drive.google.com/file/d/1Lt73YgIyFYbTQ3jTWBhXu_UM-oWr34C3/view?usp=drive_link",
+      "_blank"
+    );
+  };
 
   return (
     <>
       {/* HOME */}
       <header className="main-header">
-  <div className="container">
-    <nav className="navbar navbar-expand-lg navbar-dark">
-      
-      {/* LOGO */}
-      <a className="navbar-brand fw-bold" href="#home">
-        Manoj<span className="text-orange">.</span>
-      </a>
-
-      {/* TOGGLER */}
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      {/* LINKS */}
-      <div className="collapse navbar-collapse justify-content-end" id="mainNav">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" href="#home">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#about">About</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#skills">Skills</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#education">Education</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link btn btn-orange ms-2 px-3" href="#contact">
-              Contact
+        <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-dark">
+            {/* LOGO */}
+            <a className="navbar-brand fw-bold" href="#home">
+              Manoj<span className="text-orange">.</span>
             </a>
-          </li>
-        </ul>
-      </div>
 
-    </nav>
-  </div>
-</header>
+            {/* TOGGLER */}
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
 
-
-     <section id="home" className="hero-section">
-  <div className="container">
-    <div className="row align-items-center min-vh-100">
-
-      {/* LEFT CONTENT */}
-      <div className="col-md-6 text-white">
-        <h1 className="hero-title">
-          Hi, I’m <br />
-          <span className="text-orange">Manoj Yadav</span>
-        </h1>
-
-        <h4 className="hero-subtitle">
-          React & Full Stack Developer
-        </h4>
-
-        <p className="hero-text">
-          I design and develop modern, fast and scalable web applications
-          using React, Next.js, Node.js and MongoDB.
-        </p>
-
-        <div className="hero-buttons mt-4">
-          <a href="#contact" className="btn btn-orange me-3">
-            Hire Me
-          </a>
-
-         <button onClick={downloadCV} className="btn btn-outline-light">
-  Download CV
-</button>
-
+            {/* LINKS */}
+            <div
+              className="collapse navbar-collapse justify-content-end"
+              id="mainNav"
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link" href="#home">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#about">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#skills">
+                    Skills
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#education">
+                    Education
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link btn btn-orange ms-2 px-3"
+                    href="#contact"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </div>
+      </header>
 
-      {/* RIGHT IMAGE */}
-      <div className="col-md-6 text-center">
-        <img
-          src="/developer.jpg"
-          alt="Developer"
-          className="hero-img"
-        />
-      </div>
+      <section id="home" className="hero-section">
+        <div className="container">
+          <div className="row align-items-center min-vh-100">
+            {/* LEFT CONTENT */}
+            <div className="col-md-6 text-white">
+              <h1 className="hero-title">
+                Hi, I’m <br />
+                <span className="text-orange">Manoj Yadav</span>
+              </h1>
 
-    </div>
-  </div>
-</section>
+              <h4 className="hero-subtitle">React & Full Stack Developer</h4>
 
+              <p className="hero-text">
+                I design and develop modern, fast and scalable web applications
+                using React, Next.js, Node.js and MongoDB.
+              </p>
+
+              <div className="hero-buttons mt-4">
+                <a href="#contact" className="btn btn-orange me-3">
+                  Hire Me
+                </a>
+
+                <button onClick={downloadCV} className="btn btn-outline-light">
+                  Download CV
+                </button>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE */}
+            <div className="col-md-6 text-center">
+              <img src="/developer.jpg" alt="Developer" className="hero-img" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ABOUT */}
       <section id="about" className="section-dark">
@@ -378,26 +379,126 @@ function App() {
       {/* PROJECTS */}
       <section id="projects" className="section-light">
         <div className="container">
-          <h2 className="section-title">Projects</h2>
+          <h2 className="section-title text-center mb-5">Projects</h2>
 
           <div className="row g-4">
             {[
-              "Voice Translator App",
-              "Language Translator",
-              "Face Verification System",
-              "Voice Assistant",
+             
+              {
+                title: "Kisaan Watch",
+                description:
+                  "Agriculture monitoring system for farmers, tracking crop and field data with React frontend.",
+                link: "https://kisanwatch.vercel.app/",
+              },
+              {
+                title: "Vibe tube",
+                description: "clone of youtube play song and enjoy.",
+                link: "https://vibe-tube-azure.vercel.app/",
+              },
+              {
+                title: "Scai Software (School Management)",
+                description:
+                  "SCAI is an advanced AI-powered School Management ERP designed to simplify and automate the entire school workflow including attendance, fees, exams, timetable, communication, and student data.",
+                link: "https://arjtechnologies.com/scai-erp",
+              },
             ].map((project, i) => (
               <div className="col-md-6 col-lg-4" key={i}>
-                <div className="card project-card">
-                  <div className="card-body">
-                    <h5 className="card-title text-orange">{project}</h5>
-                    <p className="card-text">
-                      React-based project with real-world functionality.
+                <div className="card project-card h-100 shadow-sm">
+                  <div className="card-body d-flex flex-column">
+                    <h5 className="card-title text-orange">{project.title}</h5>
+                    <p className="card-text flex-grow-1">
+                      {project.description}
                     </p>
-                    {/* <a href="#" className="btn btn-sm btn-orange">
-                      View Project
-                    </a> */}
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-orange mt-3"
+                      >
+                        View Project
+                      </a>
+                    )}
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="section-light">
+        <div className="container">
+          <h2 className="section-title text-center mb-5">
+            Open to Work & Services
+          </h2>
+
+          {/* Open to Work Highlight */}
+          <div className="text-center mb-5">
+            <span className="badge bg-orange fs-5 px-4 py-2">Open to Work</span>
+            <p className="mt-3 lead">
+              I am available for full-time or freelance opportunities in web,
+              mobile, and software development.
+            </p>
+          </div>
+
+          {/* Services Cards */}
+          <div className="row g-4">
+            {[
+              {
+                title: "Web Development",
+                description:
+                  "Building responsive, fast and scalable websites using React, Next.js, Node.js.",
+                icon: "fas fa-laptop-code",
+              },
+              {
+                title: "Software Development",
+                description:
+                  "Custom software solutions, automation tools and desktop applications using Electron.js and Node.js.",
+                icon: "fas fa-cogs",
+              },
+              {
+                title: "Frontend Development",
+                description:
+                  "Designing user-friendly interfaces with React, Tailwind CSS, Bootstrap and modern JS frameworks.",
+                icon: "fas fa-object-ungroup",
+              },
+              {
+                title: "Backend Development",
+                description:
+                  "Creating robust APIs, database management, server-side logic using Node.js, Express.js, NestJS.",
+                icon: "fas fa-server",
+              },
+              {
+                title: "Mobile App Development",
+                description:
+                  "Developing cross-platform mobile apps using React Native with smooth UI & performance.",
+                icon: "fas fa-mobile-alt",
+              },
+              {
+                title: "Desktop App Development",
+                description:
+                  "Building desktop applications using Electron.js and integrating with web technologies.",
+                icon: "fas fa-desktop",
+              },
+              {
+                title: "Remote Work",
+                description:
+                  "Flexible work from anywhere with seamless communication and timely deliveries.",
+                icon: "fas fa-globe",
+              },
+              {
+                title: "Hybrid/Onsite",
+                description:
+                  "Available for hybrid or onsite projects with regular updates and collaboration.",
+                icon: "fas fa-building",
+              },
+            ].map((service, i) => (
+              <div className="col-md-6 col-lg-4" key={i}>
+                <div className="card service-card h-100 shadow-sm text-center p-3">
+                  <i className={`${service.icon} fa-3x text-orange mb-3`}></i>
+                  <h5 className="card-title text-orange">{service.title}</h5>
+                  <p className="card-text">{service.description}</p>
                 </div>
               </div>
             ))}
@@ -409,10 +510,16 @@ function App() {
       <section id="social" className="section-dark text-center">
         <div className="container">
           <h2 className="section-title">Connect With Me</h2>
-          <a href="https://github.com/dashboard" className="btn btn-outline-light me-3">
+          <a
+            href="https://github.com/dashboard"
+            className="btn btn-outline-light me-3"
+          >
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/m anoj-yadav-311b742a7/" className="btn btn-outline-light">
+          <a
+            href="https://www.linkedin.com/in/m anoj-yadav-311b742a7/"
+            className="btn btn-outline-light"
+          >
             LinkedIn
           </a>
         </div>
