@@ -188,7 +188,7 @@ function App() {
                 <h4 className="edu-title">Professional Courses</h4>
 
                 <ul className="edu-list">
-                  <li>RACIT</li>
+                  <li>RSCIT</li>
                   <li>Tally ERP</li>
                 </ul>
               </div>
@@ -383,7 +383,12 @@ function App() {
 
           <div className="row g-4">
             {[
-             
+               {
+                title: "Wapanel",
+                description:
+                  "WhatsApp Marketing An advanced automation solution by MSP IT Solutions to help you connect with thousands of customers instantly through our cloud-powered platform",
+                link: "https://wapanel.mspit.in",
+              },
               {
                 title: "Free Chat App",
                 description:
